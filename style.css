@@ -2125,6 +2125,16 @@ footer.reveal {
   }
 }
 
+.btn-header{
+  display:flex;
+}
+
+@media (max-width:620px){
+  .btn-header{
+    display:none;
+  }
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 1024px) {
