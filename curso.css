@@ -3027,3 +3027,60 @@ color: var(--green);
     text-transform: uppercase;
   }
 }
+
+/* VERSIÓN MOBILE OCULTA EN DESKTOP */
+
+.discover-mobile,
+.discover-mobile-card,
+.discover-mobile-slider {
+  display: none;
+}
+
+@media (max-width: 620px) {
+
+  .discover-mobile,
+  .discover-mobile-card,
+  .discover-mobile-slider {
+    display: block;
+  }
+
+}
+
+/* DESKTOP */
+
+.discover-desktop-layout {
+  display: grid;
+}
+
+.discover-mobile {
+  display: none;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+
+  .discover-desktop-layout {
+    display: none;
+  }
+
+  .discover-mobile {
+    display: block;
+  }
+
+}
+
+/* SOLO MOBILE */
+
+.mobile-extra-link{
+  display:none;
+}
+
+@media (max-width:620px){
+
+  .mobile-extra-link{
+    display:block;
+  }
+
+}

@@ -3385,3 +3385,93 @@ footer.reveal {
   }
 }
 
+/* ==================================================
+   TESTIMONIOS MOBILE — CARRUSEL
+================================================== */
+
+.testimonial-mobile-carousel {
+  display: none;
+}
+
+@media (max-width: 620px) {
+
+  /* OCULTAR LA VERSIÓN ACTUAL */
+
+  .testimonial-desktop {
+    display: none;
+  }
+
+  /* MOSTRAR CARRUSEL */
+
+  .testimonial-mobile-carousel {
+    width: 100%;
+
+    display: flex;
+    gap: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 24px 18px;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 24px;
+
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .testimonial-mobile-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  .testimonial-mobile-card {
+    flex: 0 0 84%;
+    min-width: 84%;
+    min-height: 360px;
+
+    padding: 34px 26px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    scroll-snap-align: center;
+
+    border-radius: 28px;
+
+    background: var(--blue);
+    color: var(--white);
+
+    text-align: center;
+  }
+
+  .testimonial-mobile-card p {
+    margin: 0 0 34px;
+
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 38px;
+    line-height: 1.02;
+    text-transform: uppercase;
+    text-wrap: balance;
+  }
+
+  .testimonial-mobile-card strong {
+    color: var(--green);
+
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  .testimonial-mobile-card span {
+    margin-top: 6px;
+
+    color: rgba(255, 255, 255, 0.72);
+
+    font-size: 13px;
+  }
+
+}
+
