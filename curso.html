@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAÍZ | Curso de restauración</title>
+
+  <link rel="stylesheet" href="curso.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header course-header">
+
+  <a href="index.html" class="logo">
+    <img
+      src="./images/LOGO.png"
+      alt="RAÍZ"
+    >
+  </a>
+
+  <nav class="nav" id="nav">
+
+  <a href="#curso">Curso</a>
+  <a href="#contenido">Contenido</a>
+  <a href="#faq">Preguntas</a>
+  <a href="kit-ui.html">Kit Ui</a>
+
+  <!-- SOLO MOBILE -->
+
+  <a
+    href="index.html"
+    class="mobile-extra-link"
+  >
+    Volver al inicio
+  </a>
+
+</nav>
+  <button
+    class="menu-btn"
+    id="menuBtn"
+    type="button"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+  <a href="index.html" class="btn-header">
+    Volver al inicio
+  </a>
+
+</header>
+
+<main>
+
+<!-- HERO CURSO -->
+<section class="course-hero" >
+
+  <div class="course-hero-text">
+    <p class="eyebrow reveal">Curso presencial</p>
+
+    <h1 class="reveal reveal-delay-1">
+      Cada mueble<br>
+      <span>merece otra historia.</span>
+    </h1>
+
+    <p class="course-description reveal reveal-delay-2">
+      Aprendé a restaurar muebles desde cero.
+      No necesitás experiencia previa, solo ganas de crear.
+    </p>
+
+    <a href="#inscripcion" class="btn-main reveal reveal-delay-3">
+      Quiero aprender
+    </a>
+
+    <div class="course-highlights reveal reveal-delay-4">
+      <article>
+        <i data-lucide="users"></i>
+        <p>Grupos reducidos</p>
+      </article>
+
+      <article>
+        <i data-lucide="paintbrush"></i>
+        <p>Materiales incluidos</p>
+      </article>
+
+      <article>
+        <i data-lucide="map-pin"></i>
+        <p>Presencial</p>
+      </article>
+    </div>
+  </div>
+
+  <div class="course-hero-image reveal reveal-delay-2">
+    <img src="./images/cursohome.png" alt="Curso de restauración de muebles">
+  </div>
+
+</section>
+
+<!-- POR QUÉ ESTE CURSO -->
+<section class="why-course">
+
+  <div class="why-course-content">
+    <p class="eyebrow">¿Por qué este curso?</p>
+
+    <h2>
+      <span class="desktop-title">
+        No enseñamos a reparar muebles.<br>
+        <span>Enseñamos a transformarlos.</span>
+      </span>
+
+      <span class="mobile-title">
+        Aprendemos a <br>
+        restaurar muebles.
+      </span>
+    </h2>
+
+    <p class="why-text">
+      <span class="desktop-text">
+        Durante el curso vas a aprender a combinar técnica, color y criterio
+        para convertir cualquier mueble en una pieza contemporánea.
+      </span>
+
+      <span class="mobile-text">
+        Aprendé a transformar muebles con diseño, color y criterio.
+      </span>
+    </p>
+  </div>
+
+</section>
+
+<!-- CAMBIAR LA MIRADA -->
+<section class="discover" id="descubrir">
+
+  <!-- TÍTULO GENERAL -->
+
+  <div class="discover-header">
+
+    <p class="eyebrow">
+      Cambiar la mirada
+    </p>
+
+    <h2>
+      Aprendé a ver<br>
+      <span>lo que otros no ven.</span>
+    </h2>
+
+  </div>
+
+
+  <!-- =========================
+       DESKTOP
+  ========================== -->
+
+  <div class="discover-desktop-layout">
+
+    <!-- IMAGEN -->
+
+    <div class="discover-map" id="discoverMap">
+
+      <img
+        src="./images/sillon-capas.png"
+        alt="Sillón desglosado por capas"
+      >
+
+      <button
+        class="hotspot"
+        data-card="1"
+        style="top:25%; left:62%;"
+      >
+        1
+      </button>
+
+      <button
+        class="hotspot"
+        data-card="2"
+        style="top:39%; left:66%;"
+      >
+        2
+      </button>
+
+      <button
+        class="hotspot"
+        data-card="3"
+        style="top:54%; left:70%;"
+      >
+        3
+      </button>
+
+      <button
+        class="hotspot"
+        data-card="4"
+        style="top:70%; left:74%;"
+      >
+        4
+      </button>
+
+    </div>
+
+
+    <!-- INFORMACIÓN -->
+
+    <div class="discover-info">
+
+      <!-- CARD INICIAL -->
+
+      <div class="discover-info-placeholder active">
+
+        <div class="discover-icon">
+          ✦
+        </div>
+
+        <span>
+          Explorá la pieza
+        </span>
+
+        <h3>
+          Descubrí qué hay detrás de cada capa.
+        </h3>
+
+        <p>
+          Cada parte del sillón representa un aprendizaje distinto
+          dentro del curso: materiales, estructura, confort y
+          terminaciones.
+        </p>
+
+        <small>
+          Seleccioná uno de los números del sillón.
+        </small>
+
+      </div>
+
+
+      <!-- CARD 1 -->
+
+      <article
+        class="layer-card"
+        data-info="1"
+      >
+
+        <span class="layer-number">
+          01
+        </span>
+
+        <p class="layer-eyebrow">
+          Superficie exterior
+        </p>
+
+        <h3>
+          Tapizado
+        </h3>
+
+        <p>
+          El tapizado define la primera impresión de la pieza.
+          Aprendés a reconocer el estado de la tela, retirar el
+          material anterior y elegir nuevas texturas y colores.
+        </p>
+
+        <ul>
+          <li>Selección de telas y texturas.</li>
+          <li>Combinación de color y material.</li>
+          <li>Colocación y terminaciones prolijas.</li>
+        </ul>
+
+      </article>
+
+
+      <!-- CARD 2 -->
+
+      <article
+        class="layer-card"
+        data-info="2"
+      >
+
+        <span class="layer-number">
+          02
+        </span>
+
+        <p class="layer-eyebrow">
+          Confort y volumen
+        </p>
+
+        <h3>
+          Espuma
+        </h3>
+
+        <p>
+          Analizás qué partes conservar, cuáles reemplazar
+          y cómo recuperar la forma y comodidad original.
+        </p>
+
+        <ul>
+          <li>Evaluación del relleno.</li>
+          <li>Corte de nueva espuma.</li>
+          <li>Construcción de volumen.</li>
+        </ul>
+
+      </article>
+
+
+      <!-- CARD 3 -->
+
+      <article
+        class="layer-card"
+        data-info="3"
+      >
+
+        <span class="layer-number">
+          03
+        </span>
+
+        <p class="layer-eyebrow">
+          Base del mueble
+        </p>
+
+        <h3>
+          Estructura
+        </h3>
+
+        <p>
+          Detectás daños, uniones flojas y problemas
+          que pueden afectar la estabilidad del mueble.
+        </p>
+
+        <ul>
+          <li>Diagnóstico estructural.</li>
+          <li>Refuerzo de uniones.</li>
+          <li>Preparación de la madera.</li>
+        </ul>
+
+      </article>
+
+
+      <!-- CARD 4 -->
+
+      <article
+        class="layer-card"
+        data-info="4"
+      >
+
+        <span class="layer-number">
+          04
+        </span>
+
+        <p class="layer-eyebrow">
+          Protección final
+        </p>
+
+        <h3>
+          Terminación
+        </h3>
+
+        <p>
+          Aplicás acabados que protegen la pieza
+          y le dan una nueva identidad visual.
+        </p>
+
+        <ul>
+          <li>Sellado de superficies.</li>
+          <li>Aplicación de acabados.</li>
+          <li>Presentación final.</li>
+        </ul>
+
+      </article>
+
+    </div>
+
+  </div>
+
+  <!-- MOBILE -->
+
+<div class="discover-mobile">
+
+  <div class="discover-mobile-image">
+
+    <img
+      src="./images/sillon-capas.png"
+      alt="Sillón desglosado"
+    >
+
+    <span class="mobile-hotspot hotspot-1">01</span>
+    <span class="mobile-hotspot hotspot-2">02</span>
+    <span class="mobile-hotspot hotspot-3">03</span>
+    <span class="mobile-hotspot hotspot-4">04</span>
+
+  </div>
+
+  <div class="discover-mobile-slider">
+
+    <div class="discover-mobile-track">
+
+      <article class="discover-mobile-item">
+        <span>01</span>
+        <h3>Tapizado</h3>
+        <p>Telas, color y nuevas texturas.</p>
+      </article>
+
+      <article class="discover-mobile-item">
+        <span>02</span>
+        <h3>Espuma</h3>
+        <p>Confort, volumen y recuperación.</p>
+      </article>
+
+      <article class="discover-mobile-item">
+        <span>03</span>
+        <h3>Estructura</h3>
+        <p>Diagnóstico y reparación.</p>
+      </article>
+
+      <article class="discover-mobile-item">
+        <span>04</span>
+        <h3>Terminación</h3>
+        <p>Protección y acabados finales.</p>
+      </article>
+
+    </div>
+
+  </div>
+
+</div>
+</section>
+
+
+<!-- RECORRIDO -->
+<section class="course-path">
+
+  <div class="course-path-header">
+    <p class="eyebrow">Tu recorrido en RAÍZ</p>
+
+    <h2>
+      Una clase.<br>
+      <span>Cuatro momentos.</span>
+    </h2>
+  </div>
+
+  <div class="path-line">
+
+    <article class="path-step reveal reveal-delay-1">
+      <span>01</span>
+      <div class="path-dot"></div>
+      <h3>Observás</h3>
+      <p>Aprendés a mirar la pieza antes de intervenirla.</p>
+    </article>
+
+    <article class="path-step reveal reveal-delay-2">
+      <span>02</span>
+      <div class="path-dot"></div>
+      <h3>Probás</h3>
+      <p>Explorás materiales, herramientas y posibilidades.</p>
+    </article>
+
+    <article class="path-step reveal reveal-delay-3">
+      <span>03</span>
+      <div class="path-dot"></div>
+      <h3>Transformás</h3>
+      <p>Aplicás técnicas de reparación, color y terminación.</p>
+    </article>
+
+    <article class="path-step reveal reveal-delay-4">
+      <span>04</span>
+      <div class="path-dot"></div>
+      <h3>Te lo llevás</h3>
+      <p>Terminás con una pieza propia y lista para usar.</p>
+    </article>
+
+  </div>
+
+</section>
+
+<!-- PROGRAMA -->
+<section class="program" id="programa">
+  <div class="program-title">
+    <p class="eyebrow">Programa</p>
+    <h2>Clase por clase</h2>
+  </div>
+
+  <div class="program-list">
+
+    <article class="reveal reveal-delay-1">
+      <span>Clase 01</span>
+      <h3>Diagnóstico y preparación</h3>
+      <p>Lectura del estado de la pieza, materiales, limpieza, lijado y preparación de superficies.</p>
+    <div class="program-icon">
+        <i data-lucide="search"></i>
+    </div>
+    </article>
+
+    <article class="reveal reveal-delay-2">
+      <span>Clase 02</span>
+      <h3>Reparación</h3>
+      <p>Refuerzo de estructura, corrección de daños y técnicas básicas para recuperar estabilidad.</p>
+    <div class="program-icon">
+        <i data-lucide="hammer"></i>
+    </div>
+    </article>
+
+    <article class="reveal reveal-delay-3">
+      <span>Clase 03</span>
+      <h3>Color y composición</h3>
+      <p>Elección de paleta, pruebas de color, aplicación y criterios visuales para rediseñar la pieza.</p>
+    <div class="program-icon">
+        <i data-lucide="palette"></i>
+    </div>
+    </article>
+
+    <article class="reveal reveal-delay-4">
+  <span>Clase 04</span>
+  <h3>Terminación final</h3>
+  <p>
+    Sellado, protección, acabados y presentación final
+    del proyecto restaurado.
+  </p>
+  <div class="program-icon">
+    <i data-lucide="sparkles"></i>
+  </div>
+
+</article>
+
+  </div>
+
+</section>
+
+<!-- EL PROCESO -->
+<section class="course-process">
+
+  <video autoplay muted loop playsinline>
+    <source src="./videos/curso.mp4" type="video/mp4">
+  </video>
+
+  <div class="process-overlay"></div>
+
+  <div class="process-content">
+
+    <h2>
+      <span class="process-title-desktop">
+        Cada pieza cuenta una historia.
+        <span>Vos aprendés a escribir la siguiente.</span>
+      </span>
+
+      <span class="process-title-mobile">
+        Cada mueble<br>
+        <span>tiene una segunda oportunidad.</span>
+      </span>
+    </h2>
+  </div>
+
+</section>
+
+<!-- INFORMACIÓN DEL CURSO -->
+
+<section class="course-summary" id="informacion-curso">
+
+  <div class="course-summary-header reveal">
+
+    <p class="eyebrow">
+      Información del curso
+    </p>
+
+    <h2>
+      Todo lo que necesitás<br>
+      <span>para empezar.</span>
+    </h2>
+  </div>
+
+  <div class="course-summary-board">
+
+    <!-- FRANJA PRINCIPAL -->
+
+    <div class="course-summary-main reveal">
+
+      <div class="course-summary-name">
+
+        <span>
+          Curso integral
+        </span>
+
+        <h3>
+          Restauración integral + color
+        </h3>
+
+      </div>
+
+      <div class="course-summary-price">
+
+        <small>
+          Valor del curso
+        </small>
+
+        <strong>
+          $75.000
+        </strong>
+
+      </div>
+
+      <a
+        href="#inscripcion"
+        class="course-summary-button"
+      >
+        Reservar mi lugar
+      </a>
+
+    </div>
+
+    <!-- INFORMACIÓN -->
+
+    <div class="course-summary-info">
+
+      <article class="reveal reveal-delay-1">
+
+        <div class="summary-icon">
+          <i data-lucide="calendar-days"></i>
+        </div>
+
+        <p class="summary-label">
+          Duración
+        </p>
+
+        <h4>
+          4 encuentros
+        </h4>
+
+        <p>
+          Clases presenciales para recorrer el proceso
+          desde el diagnóstico hasta la terminación.
+        </p>
+
+      </article>
+
+      <article class="reveal reveal-delay-2">
+
+        <div class="summary-icon">
+          <i data-lucide="paintbrush"></i>
+        </div>
+
+        <p class="summary-label">
+          Incluido
+        </p>
+
+        <h4>
+          Materiales y herramientas
+        </h4>
+
+        <p>
+          Trabajás con los productos, insumos y herramientas
+          disponibles en el taller.
+        </p>
+
+      </article>
+
+      <article class="reveal reveal-delay-3">
+
+        <div class="summary-icon">
+          <i data-lucide="armchair"></i>
+        </div>
+
+        <p class="summary-label">
+          Proyecto
+        </p>
+
+        <h4>
+          Una pieza propia
+        </h4>
+
+        <p>
+          Aplicás lo aprendido sobre un mueble real
+          y te lo llevás completamente transformado.
+        </p>
+
+      </article>
+
+    </div>
+
+    <!-- DETALLES INFERIORES -->
+
+    <div class="course-summary-footer reveal">
+
+      <p>
+        <strong>Modalidad:</strong>
+        presencial
+      </p>
+
+      <p>
+        <strong>Nivel:</strong>
+        no necesitás experiencia previa
+      </p>
+
+      <p>
+        <strong>Grupos:</strong>
+        cupos reducidos
+      </p>
+
+      <p>
+        <strong>Certificado:</strong>
+        incluido
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<!-- TAMBIÉN TE PUEDE INTERESAR -->
+
+<section class="related-courses" id="cursos">
+
+  <div class="related-courses-title">
+
+    <p class="eyebrow">
+      Seguí aprendiendo
+    </p>
+
+    <h2>
+      También te puede
+      <span>interesar</span>
+    </h2>
+
+    <p>
+      Explorá otros recorridos y encontrá el curso
+      que mejor se adapte a tu próximo proyecto.
+    </p>
+
+  </div>
+
+  <div class="related-course-grid">
+
+    <!-- CURSO INICIAL -->
+
+    <article class="related-course-card reveal">
+
+      <div class="related-course-flip">
+
+        <div class="related-course-front">
+
+          <img
+            src="./images/INICIAL.jpg"
+            alt="Curso inicial"
+          >
+
+          <p class="related-course-tag">
+            Inicial
+          </p>
+
+          <h3>
+            Diagnóstico y preparación
+          </h3>
+
+          <strong>
+            $45.000
+          </strong>
+
+        </div>
+
+        <div class="related-course-back">
+
+          <p class="related-course-tag">
+            Inicial
+          </p>
+
+          <h3>
+            Diagnóstico y preparación
+          </h3>
+
+          <ul>
+            <li>1 clase presencial</li>
+            <li>Materiales incluidos</li>
+            <li>Sin experiencia previa</li>
+          </ul>
+
+          <p>
+            Aprendé a observar una pieza, detectar problemas
+            y preparar correctamente sus superficies.
+          </p>
+
+          <a href="curso-inicial.html">
+            Ver curso
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+    <!-- CURSO AVANZADO -->
+
+    <article class="related-course-card reveal reveal-delay-1">
+
+      <div class="related-course-flip">
+
+        <div class="related-course-front">
+
+          <img
+            src="./images/Avanzado.jpg"
+            alt="Curso avanzado"
+          >
+
+          <p class="related-course-tag">
+            Avanzado
+          </p>
+
+          <h3>
+            Rediseño estético
+          </h3>
+
+          <strong>
+            $95.000
+          </strong>
+
+        </div>
+
+        <div class="related-course-back">
+
+          <p class="related-course-tag">
+            Avanzado
+          </p>
+
+          <h3>
+            Rediseño estético
+          </h3>
+
+          <ul>
+            <li>3 clases presenciales</li>
+            <li>Color y composición</li>
+            <li>Terminaciones premium</li>
+          </ul>
+
+          <p>
+            Transformá una pieza desde una mirada
+            más creativa y contemporánea.
+          </p>
+
+          <a href="curso-avanzado.html">
+            Ver curso
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <div class="footer-brand">
+
+      <a href="index.html" class="footer-logo">
+        <img
+          src="./images/LOGO BLANCO.png"
+          alt="RAÍZ"
+        >
+      </a>
+
+      <p class="footer-tagline">
+        Restauración, color y diseño.
+      </p>
+
+    </div>
+
+    <div class="footer-columns">
+
+      <div>
+
+        <span>Navegación</span>
+
+        <a href="index.html">Inicio</a>
+        <a href="index.html#espacio">Espacio RAÍZ</a>
+        <a href="index.html#cursos">Cursos</a>
+        <a href="index.html#capsula">Muebles cápsula</a>
+        <a href="kit-iu.html">Kit UI</a>
+
+      </div>
+
+      <div>
+
+        <span>Contacto</span>
+
+        <a href="mailto:hola@raiz.com">
+          hola@raiz.com
+        </a>
+
+        <a href="#">
+          WhatsApp
+        </a>
+
+      </div>
+
+      <div>
+
+        <span>Seguinos</span>
+
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+        <a href="#">TikTok</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 RAÍZ
+    </p>
+
+    <p>
+      Proyecto académico · Diseño Web · FADU UBA
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

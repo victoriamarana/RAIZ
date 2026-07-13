@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>RAÍZ | Kit UI</title>
+
+  <link rel="stylesheet" href="kit-ui.css">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+
+ <!-- HEADER -->
+
+<header class="header">
+
+  <a href="index.html" class="logo">
+    <img
+      src="./images/LOGO.png"
+      alt="RAÍZ"
+    >
+  </a>
+
+  <nav class="nav" id="nav">
+
+    <a href="#fundamentos">Fundamentos</a>
+    <a href="#tipografia">Tipografía</a>
+    <a href="#componentes">Componentes</a>
+    <a href="#efectos">Efectos</a>
+    <a href="#responsive">Responsive</a>
+
+    <a href="index.html" class="mobile-courses-link">
+      Volver al inicio
+    </a>
+
+  </nav>
+
+  <a href="index.html" class="btn-header">
+    Volver al inicio
+  </a>
+
+  <button
+    class="menu-btn"
+    id="menuBtn"
+    type="button"
+    aria-label="Abrir menú"
+    aria-expanded="false"
+  >
+    ☰
+  </button>
+
+</header>
+
+
+  <main>
+
+    <!-- HERO -->
+
+    <section class="ui-hero">
+
+      <div class="ui-container ui-hero-grid">
+
+        <div>
+          <p class="eyebrow">Sistema de diseño · RAÍZ</p>
+
+          <h1>
+            Kit de<br>
+            <span>interfaz visual.</span>
+          </h1>
+
+          <p class="ui-hero-description">
+            Guía de colores, tipografías, tamaños, componentes,
+            estados y efectos utilizados en la experiencia digital de RAÍZ.
+          </p>
+
+          <div class="button-row">
+            <a href="#fundamentos" class="button button-primary">
+              Explorar sistema
+            </a>
+
+            <a href="#componentes" class="button button-outline">
+              Ver componentes
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-token-board" aria-label="Resumen visual del sistema">
+
+          <div class="hero-token hero-token-blue">
+            <small>Color principal</small>
+            <strong>#3047FF</strong>
+          </div>
+
+          <div class="hero-token hero-token-green">
+            <small>Acento</small>
+            <strong>#C8F52B</strong>
+          </div>
+
+          <div class="hero-token hero-token-black">
+            <small>Base oscura</small>
+            <strong>#0F0F0F</strong>
+          </div>
+
+          <div class="hero-token hero-token-type">
+            <small>Display</small>
+            <strong>ANTON</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ÍNDICE -->
+
+    <section class="ui-index">
+
+      <div class="ui-container ui-index-grid">
+
+        <a href="#colores" class="index-card">
+          <span>01</span>
+          <strong>Colores</strong>
+        </a>
+
+        <a href="#tipografia" class="index-card">
+          <span>02</span>
+          <strong>Tipografía</strong>
+        </a>
+
+        <a href="#espaciado" class="index-card">
+          <span>03</span>
+          <strong>Escala y espacio</strong>
+        </a>
+
+        <a href="#componentes" class="index-card">
+          <span>04</span>
+          <strong>Componentes</strong>
+        </a>
+
+        <a href="#efectos" class="index-card">
+          <span>05</span>
+          <strong>Efectos</strong>
+        </a>
+
+        <a href="#responsive" class="index-card">
+          <span>06</span>
+          <strong>Responsive</strong>
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- FUNDAMENTOS -->
+
+    <section class="ui-section" id="fundamentos">
+
+      <div class="ui-container">
+
+        <div class="section-heading">
+          <h2>Identidad visual</h2>
+          <p>
+            El sistema combina una base neutra con colores de alto contraste,
+            títulos condensados y componentes de bordes amplios.
+          </p>
+        </div>
+
+
+        <!-- COLORES -->
+
+<div class="ui-subsection" id="colores">
+
+  <div class="subsection-heading">
+    <h3>Paleta principal</h3>
+
+    <p>
+      Colores tomados de las variables globales del sitio.
+    </p>
+  </div>
+
+  <!-- CARRUSEL -->
+
+  <div
+    class="color-grid"
+    id="colorCarousel"
+  >
+
+    <article class="color-card">
+      <div class="color-swatch color-black"></div>
+
+      <div class="color-meta">
+        <span>Negro RAÍZ</span>
+        <strong>#0F0F0F</strong>
+        <small>Fondos, texto y cards</small>
+      </div>
+    </article>
+
+    <article class="color-card">
+      <div class="color-swatch color-white"></div>
+
+      <div class="color-meta">
+        <span>Blanco cálido</span>
+        <strong>#F5F4EF</strong>
+        <small>Fondo principal</small>
+      </div>
+    </article>
+
+    <article class="color-card">
+      <div class="color-swatch color-green"></div>
+
+      <div class="color-meta">
+        <span>Verde acento</span>
+        <strong>#C8F52B</strong>
+        <small>CTA y estados activos</small>
+      </div>
+    </article>
+
+    <article class="color-card">
+      <div class="color-swatch color-blue"></div>
+
+      <div class="color-meta">
+        <span>Azul principal</span>
+        <strong>#3047FF</strong>
+        <small>Títulos y superficies</small>
+      </div>
+    </article>
+
+    <article class="color-card">
+      <div class="color-swatch color-orange"></div>
+
+      <div class="color-meta">
+        <span>Naranja</span>
+        <strong>#FF5A1F</strong>
+        <small>Énfasis y hover</small>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- PUNTITOS -->
+
+  <div
+    class="ui-carousel-dots"
+    id="colorDots"
+  ></div>
+
+</div>
+
+
+<!-- COMBINACIONES -->
+
+<div class="ui-subsection">
+
+  <div class="subsection-heading">
+
+    <h3>Combinaciones aprobadas</h3>
+
+    <p>
+      Pares de color con contraste alto para
+      bloques y llamadas a la acción.
+    </p>
+
+  </div>
+
+  <!-- CARRUSEL -->
+
+  <div
+    class="contrast-grid"
+    id="contrastCarousel"
+  >
+
+    <article
+      class="contrast-card contrast-black-green"
+    >
+      <span>Fondo negro</span>
+
+      <strong>
+        Texto verde
+      </strong>
+
+      <small>
+        CTA · Etiquetas · Estados
+      </small>
+    </article>
+
+    <article
+      class="contrast-card contrast-blue-white"
+    >
+      <span>Fondo azul</span>
+
+      <strong>
+        Texto blanco
+      </strong>
+
+      <small>
+        Secciones destacadas
+      </small>
+    </article>
+
+    <article
+      class="contrast-card contrast-green-black"
+    >
+      <span>Fondo verde</span>
+
+      <strong>
+        Texto negro
+      </strong>
+
+      <small>
+        Botones principales
+      </small>
+    </article>
+
+    <article
+      class="contrast-card contrast-white-blue"
+    >
+      <span>Fondo claro</span>
+
+      <strong>
+        Texto azul
+      </strong>
+
+      <small>
+        Eyebrows y palabras clave
+      </small>
+    </article>
+
+  </div>
+
+  <!-- PUNTITOS -->
+
+  <div
+    class="ui-carousel-dots"
+    id="contrastDots"
+  ></div>
+
+</div>
+
+</section>
+
+
+    <!-- TIPOGRAFÍA -->
+
+<section class="ui-section ui-section-dark" id="tipografia">
+
+  <div class="ui-container">
+
+    <!-- TÍTULO DE LA SECCIÓN -->
+
+    <div class="section-heading">
+
+      <h2>
+        Escala tipográfica
+      </h2>
+
+      <p>
+        El sistema utiliza una tipografía display de alto impacto,
+        una condensada para subtítulos y una sans serif funcional
+        para lectura.
+      </p>
+
+    </div>
+
+
+    <!-- ==================================
+         FAMILIAS TIPOGRÁFICAS
+    =================================== -->
+
+    <div
+      class="type-family-grid"
+      id="typeFamilyCarousel"
+    >
+
+      <!-- ANTON -->
+
+      <article class="type-family-card">
+
+        <p>
+          Display principal
+        </p>
+
+        <strong class="sample-anton">
+          Anton
+        </strong>
+
+        <span>
+          Títulos hero · Mayúsculas · Peso 400
+        </span>
+
+      </article>
+
+
+      <!-- BEBAS NEUE -->
+
+      <article class="type-family-card">
+
+        <p>
+          Display secundaria
+        </p>
+
+        <strong class="sample-bebas">
+          Bebas Neue
+        </strong>
+
+        <span>
+          Cards · Precios · Secciones · Peso 400
+        </span>
+
+      </article>
+
+
+      <!-- INTER -->
+
+      <article class="type-family-card">
+
+        <p>
+          Texto y UI
+        </p>
+
+        <strong class="sample-inter">
+          Inter
+        </strong>
+
+        <span>
+          Párrafos · Botones · Navegación · 400–800
+        </span>
+
+      </article>
+
+    </div>
+
+
+    <!-- PUNTITOS DEL CARRUSEL MOBILE -->
+
+    <div
+      class="ui-carousel-dots"
+      id="typeFamilyDots"
+      aria-label="Indicadores de familias tipográficas"
+    ></div>
+
+
+    <!-- ==================================
+         MARCA
+    =================================== -->
+
+    <div class="brand-mark-block">
+
+      <div class="subsection-heading">
+
+        <h3>
+          Marca
+        </h3>
+
+        <p>
+          El logotipo de RAÍZ es una pieza gráfica diseñada
+          y no se reemplaza por una tipografía escrita.
+        </p>
+
+      </div>
+
+
+      <div class="brand-mark-grid">
+
+        <!-- LOGO PRINCIPAL -->
+
+        <article class="brand-mark-card brand-mark-light">
+
+          <span>
+            Aplicación principal
+          </span>
+
+          <img
+            src="./images/LOGO.png"
+            alt="Logotipo principal de RAÍZ"
+          >
+
+          <small>
+            Usar sobre fondos claros.
+          </small>
+
+        </article>
+
+
+        <!-- LOGO INVERTIDO -->
+
+        <article class="brand-mark-card brand-mark-dark">
+
+          <span>
+            Aplicación invertida
+          </span>
+
+          <img
+            src="./images/LOGO BLANCO.png"
+            alt="Logotipo blanco de RAÍZ"
+          >
+
+          <small>
+            Usar sobre fondos oscuros.
+          </small>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- ==================================
+         ESCALA TIPOGRÁFICA
+    =================================== -->
+
+    <div class="type-scale">
+
+      <!-- DISPLAY XL -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Display XL
+          </span>
+
+          <small>
+            Anton · clamp(88px, 7.8vw, 145px)
+          </small>
+
+        </div>
+
+        <p class="type-display-xl">
+          Transformar
+        </p>
+
+      </article>
+
+
+      <!-- HEADING 01 -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Heading 01
+          </span>
+
+          <small>
+            Bebas Neue · clamp(56px, 6vw, 110px)
+          </small>
+
+        </div>
+
+        <p class="type-heading-one">
+          Diseñar otra historia
+        </p>
+
+      </article>
+
+
+      <!-- HEADING 02 -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Heading 02
+          </span>
+
+          <small>
+            Bebas Neue · 44px / 0.9
+          </small>
+
+        </div>
+
+        <p class="type-heading-two">
+          Diagnóstico y preparación
+        </p>
+
+      </article>
+
+
+      <!-- EYEBROW -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Eyebrow
+          </span>
+
+          <small>
+            Inter 800 · 12–14px · uppercase
+          </small>
+
+        </div>
+
+        <p class="type-eyebrow">
+          Cursos de restauración
+        </p>
+
+      </article>
+
+
+      <!-- CUERPO GRANDE -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Cuerpo grande
+          </span>
+
+          <small>
+            Inter 400 · 20–22px / 1.45
+          </small>
+
+        </div>
+
+        <p class="type-body-large">
+          Restauramos muebles desde una mirada contemporánea.
+        </p>
+
+      </article>
+
+
+      <!-- CUERPO -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            Cuerpo
+          </span>
+
+          <small>
+            Inter 400 · 16px / 1.5
+          </small>
+
+        </div>
+
+        <p class="type-body">
+          Combinamos técnica, color y criterio para transformar
+          piezas existentes.
+        </p>
+
+      </article>
+
+
+      <!-- UI PEQUEÑA -->
+
+      <article class="type-row">
+
+        <div>
+
+          <span>
+            UI pequeña
+          </span>
+
+          <small>
+            Inter 800 · 11–13px · uppercase
+          </small>
+
+        </div>
+
+        <p class="type-ui-small">
+          Ver experiencia
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- ESCALA Y ESPACIADO -->
+
+<section class="ui-section" id="espaciado">
+
+  <div class="ui-container">
+
+    <div class="section-heading">
+
+      <h2>
+        Ritmo visual
+      </h2>
+
+      <p>
+        Una escala simple ayuda a mantener coherencia entre cards,
+        secciones, textos y controles.
+      </p>
+
+    </div>
+
+
+    <!-- CARRUSEL DE ESPACIADOS -->
+
+    <div class="spacing-demo-card" id="spacingCard">
+
+  <p class="spacing-label">
+    Ritmo visual
+  </p>
+
+  <h3 id="spacingValue">
+    4 PX
+  </h3>
+
+  <p id="spacingDescription">
+    Microajustes
+  </p>
+
+  <div class="spacing-progress">
+
+    <div
+      class="spacing-progress-fill"
+      id="spacingBar"
+    ></div>
+
+  </div>
+
+  <button
+    class="spacing-click"
+    id="spacingButton"
+  >
+    Hace click →
+  </button>
+
+  <p class="spacing-hint">
+  Tocá la card para recorrer la escala.
+</p>
+</div>
+
+
+    <!-- PUNTITOS DEL CARRUSEL -->
+
+    <div
+      class="ui-carousel-dots"
+      id="spacingDots"
+      aria-label="Indicadores de escala de espaciado"
+    ></div>
+
+
+    <!-- RADIOS Y SOMBRAS -->
+
+    <div
+      class="radius-shadow-grid"
+      id="radiusShadowCarousel"
+    >
+
+      <article class="token-panel">
+
+        <p class="eyebrow">
+          Radios
+        </p>
+
+        <div class="radius-list">
+
+          <span class="radius radius-14">14</span>
+          <span class="radius radius-18">18</span>
+          <span class="radius radius-22">22</span>
+          <span class="radius radius-28">28</span>
+          <span class="radius radius-pill">999</span>
+
+        </div>
+
+      </article>
+
+
+      <article class="token-panel">
+
+        <p class="eyebrow">
+          Sombras
+        </p>
+
+        <div class="shadow-list">
+
+          <span class="shadow-soft">
+            Suave
+          </span>
+
+          <span class="shadow-medium">
+            Media
+          </span>
+
+          <span class="shadow-blue">
+            Azul
+          </span>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- PUNTITOS RADIOS Y SOMBRAS -->
+
+    <div
+      class="ui-carousel-dots"
+      id="radiusShadowDots"
+      aria-label="Indicadores de radios y sombras"
+    ></div>
+
+  </div>
+
+</section>
+
+
+    <!-- COMPONENTES -->
+
+<section class="ui-section ui-section-components" id="componentes">
+      <div class="ui-container">
+
+        <div class="section-heading">
+          <h2>Elementos de interfaz</h2>
+          <p>
+            Componentes reutilizables tomados de la página principal
+            y de la página de detalle del curso.
+          </p>
+        </div>
+
+
+        <!-- BOTONES -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Botones</h3>
+            <p>Estados principales, alternativos y de icono.</p>
+          </div>
+
+          <div class="component-surface">
+
+            <div class="button-showcase">
+              <button class="button button-primary">Principal</button>
+              <button class="button button-dark">Oscuro</button>
+              <button class="button button-outline">Outline</button>
+              <button class="button button-white">Sobre fondo</button>
+
+              <button class="icon-button" aria-label="Siguiente">
+                →
+              </button>
+            </div>
+
+            <div class="state-list">
+              <span>Default</span>
+              <span>Hover: translateY(-2px)</span>
+              <span>Active: scale(.97)</span>
+              <span>Focus: ring azul</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- ICONOGRAFÍA -->
+
+<section class="ui-section" id="iconos">
+
+  <div class="section-heading">
+    <p class="eyebrow">Iconografía</p>
+
+    <h2>
+      Sistema de
+      <span>íconos</span>
+    </h2>
+
+    <p>
+      Conjunto de recursos gráficos utilizados para navegación,
+      interacción y señalización dentro del ecosistema RAÍZ.
+    </p>
+  </div>
+
+  <div class="icons-grid">
+
+    <div class="icon-card">
+      <div class="icon-preview">✦</div>
+      <span>Decorativo</span>
+    </div>
+
+    <div class="icon-card">
+      <div class="icon-preview">↔</div>
+      <span>Comparador</span>
+    </div>
+
+    <div class="icon-card">
+      <div class="icon-preview">☰</div>
+      <span>Menú</span>
+    </div>
+
+    <div class="icon-card">
+      <div class="icon-preview">✕</div>
+      <span>Cerrar</span>
+    </div>
+
+    <div class="icon-card">
+      <div class="icon-preview">✱</div>
+      <span>Listado</span>
+    </div>
+
+    <div class="icon-card">
+      <div class="icon-preview">→</div>
+      <span>Navegación</span>
+    </div>
+
+  </div>
+
+</section>
+
+        <!-- ETIQUETAS -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Etiquetas y estados</h3>
+          </div>
+
+          <div class="component-surface">
+            <div class="tag-row">
+              <span class="tag tag-green">Más elegido</span>
+              <span class="tag tag-blue">Curso integral</span>
+              <span class="tag tag-dark">Avanzado</span>
+              <span class="tag tag-outline">Presencial</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- CARDS -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Cards de curso</h3>
+            <p>Superficie oscura, borde verde y variante destacada azul.</p>
+          </div>
+
+          <div class="demo-card-grid">
+
+            <article class="demo-course-card">
+
+              <div class="demo-image demo-image-one">
+                <span>Imagen 4:3</span>
+              </div>
+
+              <p class="course-label">Inicial</p>
+
+              <h4>Diagnóstico y preparación</h4>
+
+              <strong>$45.000</strong>
+
+            </article>
+
+            <article class="demo-course-card demo-course-card-featured">
+
+              <div class="demo-image demo-image-two">
+                <span>Imagen 4:3</span>
+              </div>
+
+              <p class="course-label course-label-pill">Más elegido</p>
+
+              <h4>Restauración integral + color</h4>
+
+              <strong>$75.000</strong>
+
+            </article>
+
+            <article class="demo-info-card">
+
+              <div class="demo-icon">✦</div>
+
+              <p class="eyebrow">Proyecto</p>
+
+              <h4>Una pieza propia</h4>
+
+              <p>
+                Aplicás lo aprendido sobre un mueble real y te lo llevás terminado.
+              </p>
+
+            </article>
+
+          </div>
+
+        <div
+  class="ui-carousel-dots"
+  id="courseCardsDots"
+></div>
+
+
+        <!-- FORMULARIOS -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Campos de formulario</h3>
+            <p>Controles claros sobre superficies oscuras.</p>
+          </div>
+
+          <div class="form-demo">
+
+            <label class="field">
+              <span>Nombre y apellido</span>
+              <input type="text" placeholder="Escribí tu nombre">
+            </label>
+
+            <label class="field">
+              <span>Correo electrónico</span>
+              <input type="email" placeholder="nombre@email.com">
+            </label>
+
+            <label class="field field-full">
+              <span>Mensaje</span>
+              <textarea rows="5" placeholder="Contanos qué querés restaurar"></textarea>
+            </label>
+
+            <fieldset class="field-options field-full">
+              <legend>Curso de interés</legend>
+
+              <label>
+                <input type="radio" name="curso" checked>
+                <span>Inicial</span>
+              </label>
+
+              <label>
+                <input type="radio" name="curso">
+                <span>Integral</span>
+              </label>
+
+              <label>
+                <input type="radio" name="curso">
+                <span>Avanzado</span>
+              </label>
+            </fieldset>
+
+          </div>
+
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Navegación</h3>
+          </div>
+
+          <div class="component-surface navigation-demo">
+
+            <strong class="brand-sample">RAÍZ</strong>
+
+            <nav>
+              <a href="#">Experiencia</a>
+              <a href="#">Aprendizaje</a>
+              <a href="#">Color Lab</a>
+              <a href="#">Contacto</a>
+            </nav>
+
+            <button class="button button-primary">Ver cursos</button>
+
+          </div>
+
+        </div>
+
+
+        <!-- INDICADORES -->
+
+        <div class="component-block">
+
+          <div class="subsection-heading">
+            <h3>Indicadores y controles</h3>
+          </div>
+
+          <div class="component-surface indicator-showcase">
+
+            <div class="slider-control">
+              <div class="slider-line"></div>
+              <div class="slider-handle">↔</div>
+            </div>
+
+            <div class="dot-control">
+              <button class="dot active" aria-label="Slide 1"></button>
+              <button class="dot" aria-label="Slide 2"></button>
+              <button class="dot" aria-label="Slide 3"></button>
+              <button class="dot" aria-label="Slide 4"></button>
+            </div>
+
+            <div class="accordion-control">
+              <span>01 / Antes</span>
+              <button aria-label="Abrir">+</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- EFECTOS -->
+
+<section class="ui-section ui-section-dark" id="efectos">
+
+  <div class="ui-container">
+
+    <div class="section-heading">
+
+      <h2>
+        Movimiento e interacción
+      </h2>
+
+      <p>
+        Las animaciones son rápidas, claras y acompañan la interacción
+        sin competir con el contenido.
+      </p>
+
+    </div>
+
+
+    <!-- CARDS DE EFECTOS -->
+
+    <div
+      class="effect-grid"
+      id="effectsCarousel"
+    >
+
+      <article class="effect-card effect-hover-lift">
+        <span>Hover</span>
+
+        <h3>
+          Elevación
+        </h3>
+
+        <p>
+          translateY(-8px) · 300ms ease
+        </p>
+      </article>
+
+
+      <article class="effect-card effect-scale">
+        <span>Hover</span>
+
+        <h3>
+          Escala
+        </h3>
+
+        <p>
+          scale(1.06) · 250ms ease
+        </p>
+      </article>
+
+
+      <article class="effect-card effect-border">
+        <span>Estado activo</span>
+
+        <h3>
+          Cambio de borde
+        </h3>
+
+        <p>
+          Negro → Naranja
+        </p>
+      </article>
+
+
+      <article class="effect-card effect-gradient">
+        <span>Overlay</span>
+
+        <h3>
+          Degradado
+        </h3>
+
+        <p>
+          Oscuro inferior para legibilidad
+        </p>
+      </article>
+
+
+      <article class="effect-card effect-reveal">
+        <span>Entrada</span>
+
+        <h3>
+          Reveal
+        </h3>
+
+        <p>
+          Opacity + translateY(18px)
+        </p>
+      </article>
+
+
+      <article class="effect-card effect-flip">
+
+        <div class="effect-flip-inner">
+
+          <div class="effect-flip-front">
+            <span>Hover</span>
+
+            <h3>
+              Flip card
+            </h3>
+          </div>
+
+          <div class="effect-flip-back">
+            <span>rotateY</span>
+
+            <h3>
+              180°
+            </h3>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <!-- PUNTITOS MOBILE -->
+
+    <div
+      class="ui-carousel-dots"
+      id="effectsDots"
+      aria-label="Indicadores de efectos"
+    ></div>
+
+
+    <!-- TABLA DESKTOP -->
+
+    <div class="motion-table motion-table-desktop">
+
+      <div class="motion-row motion-row-head">
+        <span>Uso</span>
+        <span>Duración</span>
+        <span>Curva</span>
+        <span>Propiedades</span>
+      </div>
+
+      <div class="motion-row">
+        <span>Hover simple</span>
+        <span>250–300 ms</span>
+        <span>ease</span>
+        <span>transform, color</span>
+      </div>
+
+      <div class="motion-row">
+        <span>Carruseles</span>
+        <span>450 ms</span>
+        <span>cubic-bezier(.22, 1, .36, 1)</span>
+        <span>transform</span>
+      </div>
+
+      <div class="motion-row">
+        <span>Flip card</span>
+        <span>650–700 ms</span>
+        <span>ease</span>
+        <span>rotateY</span>
+      </div>
+
+      <div class="motion-row">
+        <span>Acordeón</span>
+        <span>550 ms</span>
+        <span>ease</span>
+        <span>max-height, padding</span>
+      </div>
+
+      <div class="motion-row">
+        <span>Reveal</span>
+        <span>600 ms</span>
+        <span>ease</span>
+        <span>opacity, translateY</span>
+      </div>
+
+    </div>
+
+
+    <!-- VERSIÓN MOBILE DE LA TABLA -->
+
+    <div class="motion-mobile-list">
+
+      <article class="motion-mobile-card">
+
+        <span class="motion-mobile-label">
+          Hover simple
+        </span>
+
+        <div>
+          <small>Duración</small>
+          <strong>250–300 ms</strong>
+        </div>
+
+        <div>
+          <small>Curva</small>
+          <strong>ease</strong>
+        </div>
+
+        <div>
+          <small>Propiedades</small>
+          <strong>transform, color</strong>
+        </div>
+
+      </article>
+
+
+      <article class="motion-mobile-card">
+
+        <span class="motion-mobile-label">
+          Carruseles
+        </span>
+
+        <div>
+          <small>Duración</small>
+          <strong>450 ms</strong>
+        </div>
+
+        <div>
+          <small>Curva</small>
+          <strong>cubic-bezier(.22, 1, .36, 1)</strong>
+        </div>
+
+        <div>
+          <small>Propiedades</small>
+          <strong>transform</strong>
+        </div>
+
+      </article>
+
+
+      <article class="motion-mobile-card">
+
+        <span class="motion-mobile-label">
+          Flip card
+        </span>
+
+        <div>
+          <small>Duración</small>
+          <strong>650–700 ms</strong>
+        </div>
+
+        <div>
+          <small>Curva</small>
+          <strong>ease</strong>
+        </div>
+
+        <div>
+          <small>Propiedades</small>
+          <strong>rotateY</strong>
+        </div>
+
+      </article>
+
+
+      <article class="motion-mobile-card">
+
+        <span class="motion-mobile-label">
+          Acordeón
+        </span>
+
+        <div>
+          <small>Duración</small>
+          <strong>550 ms</strong>
+        </div>
+
+        <div>
+          <small>Curva</small>
+          <strong>ease</strong>
+        </div>
+
+        <div>
+          <small>Propiedades</small>
+          <strong>max-height, padding</strong>
+        </div>
+
+      </article>
+
+
+      <article class="motion-mobile-card">
+
+        <span class="motion-mobile-label">
+          Reveal
+        </span>
+
+        <div>
+          <small>Duración</small>
+          <strong>600 ms</strong>
+        </div>
+
+        <div>
+          <small>Curva</small>
+          <strong>ease</strong>
+        </div>
+
+        <div>
+          <small>Propiedades</small>
+          <strong>opacity, translateY</strong>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- RESPONSIVE -->
+
+<section class="ui-section" id="responsive">
+
+  <div class="ui-container">
+
+    <div class="section-heading">
+
+      <p class="eyebrow">
+        Responsive
+      </p>
+
+      <h2>
+        Comportamiento adaptable
+      </h2>
+
+      <p>
+        La interfaz cambia composición, no solamente tamaño.
+        Los grids se convierten en carruseles y los títulos se equilibran.
+      </p>
+
+    </div>
+
+
+    <!-- CARDS DE BREAKPOINTS -->
+
+    <div
+      class="breakpoint-grid"
+      id="responsiveCarousel"
+    >
+
+      <article class="breakpoint-card">
+
+        <span>
+          Desktop amplio
+        </span>
+
+        <strong>
+          + 1440 px
+        </strong>
+
+        <p>
+          Contenido centrado y ancho máximo controlado.
+        </p>
+
+      </article>
+
+
+      <article class="breakpoint-card">
+
+        <span>
+          Desktop / notebook
+        </span>
+
+        <strong>
+          1025–1439 px
+        </strong>
+
+        <p>
+          Reducción de gaps, alturas e imágenes.
+        </p>
+
+      </article>
+
+
+      <article class="breakpoint-card">
+
+        <span>
+          Tablet
+        </span>
+
+        <strong>
+          621–1024 px
+        </strong>
+
+        <p>
+          Grids de dos columnas y navegación compacta.
+        </p>
+
+      </article>
+
+
+      <article class="breakpoint-card">
+
+        <span>
+          Mobile
+        </span>
+
+        <strong>
+          ≤ 620 px
+        </strong>
+
+        <p>
+          Una columna, carruseles horizontales y títulos centrados.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <!-- PUNTITOS MOBILE -->
+
+    <div
+      class="ui-carousel-dots"
+      id="responsiveDots"
+      aria-label="Indicadores de breakpoints"
+    ></div>
+
+
+    <!-- REGLAS RESPONSIVE -->
+
+    <div class="responsive-rules">
+
+      <article>
+        <strong>
+          Contenedor
+        </strong>
+
+        <code>
+          width: min(100% - 40px, 1440px)
+        </code>
+      </article>
+
+
+      <article>
+        <strong>
+          Separación de sección
+        </strong>
+
+        <code>
+          clamp(60px, 7vw, 110px)
+        </code>
+      </article>
+
+
+      <article>
+        <strong>
+          Padding lateral
+        </strong>
+
+        <code>
+          clamp(20px, 4.5vw, 70px)
+        </code>
+      </article>
+
+
+      <article>
+        <strong>
+          Títulos fluidos
+        </strong>
+
+        <code>
+          clamp(min, vw, max)
+        </code>
+      </article>
+
+
+      <article>
+        <strong>
+          Imágenes
+        </strong>
+
+        <code>
+          width: 100%; object-fit: cover
+        </code>
+      </article>
+
+
+      <article>
+        <strong>
+          Carruseles mobile
+        </strong>
+
+        <code>
+          flex: 0 0 82%; scroll-snap
+        </code>
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="footer-top">
+
+    <!-- MARCA -->
+
+    <div class="footer-brand">
+
+      <a href="index.html" class="footer-logo">
+
+        <img
+          src="./images/LOGO BLANCO.png"
+          alt="RAÍZ"
+        >
+
+      </a>
+
+      <p class="footer-tagline">
+        Sistema visual, componentes y diseño.
+      </p>
+
+    </div>
+
+
+    <!-- COLUMNAS -->
+
+    <div class="footer-columns">
+
+      <div>
+
+        <span>Navegación</span>
+
+        <a href="index.html">
+          Volver al inicio
+        </a>
+
+        <a href="curso.html">
+          Cursos
+        </a>
+
+        <a href="kit-ui.html">
+          Kit UI
+        </a>
+
+        <a href="#fundamentos">
+          Identidad visual
+        </a>
+
+        <a href="#componentes">
+          Componentes
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <span>Secciones del Kit</span>
+
+        <a href="#tipografia">
+          Tipografía
+        </a>
+
+        <a href="#espaciado">
+          Escala y espacio
+        </a>
+
+        <a href="#efectos">
+          Movimiento
+        </a>
+
+        <a href="#responsive">
+          Responsive
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <span>Contacto</span>
+
+        <a href="mailto:hola@raiz.com">
+          hola@raiz.com
+        </a>
+
+        <a href="#">
+          WhatsApp
+        </a>
+
+        <a href="#">
+          Instagram
+        </a>
+
+        <a href="#">
+          Behance
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- PARTE INFERIOR -->
+
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 RAÍZ
+    </p>
+
+    <p>
+      Kit UI · Proyecto académico · Diseño Web · FADU UBA
+    </p>
+
+  </div>
+
+</footer>
+
+<script src="kit-ui.js"></script>
+</body>
+</html>
